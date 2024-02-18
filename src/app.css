@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+iframe#webpack-dev-server-client-overlay {
+    display: none !important
+}
+
+@layer components {
+    td {
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(71 85 105);
+        padding-left: 4px;
+    }
+
+    tr:hover {
+        background-color: rgb(107 114 128);
+    }
+}
