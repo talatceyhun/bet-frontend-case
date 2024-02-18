@@ -16,7 +16,7 @@ const App = () => {
   const [coupon, setCoupon] = useState([]);
 
   const updateCoupon = (bet, rate, rateIndex) => {
-    const activeBetIndex = coupon?.findIndex((match) => match.id === bet.id);
+    const activeBetIndex = coupon.findIndex((match) => match.id === bet.id);
     if (activeBetIndex === -1) {
       const { id, teamNames, mbs } = bet;
       const betTmp = { id, teamNames, mbs, rate, rateIndex };
